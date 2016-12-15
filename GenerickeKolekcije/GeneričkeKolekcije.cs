@@ -10,13 +10,15 @@ namespace Vsite.CSharp
         {
             ArrayList osobe = new ArrayList();
             // TODO: U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
-
-
+            Osoba ivica = new Osoba("Ivica", new DateTime(1873, 11, 2));
+            Osoba marica = new Osoba("Marica", new DateTime(1853, 11, 12));
+            osobe.Add(ivica);
+            osobe.Add(marica);
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
 
             // TODO: U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            osobe.Add(3);
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
         }
@@ -25,7 +27,10 @@ namespace Vsite.CSharp
         {
             List<Osoba> osobe = new List<Osoba>();
             // TODO: Ponoviti dodavananja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            Osoba ivica = new Osoba("Ivica", new DateTime(1873, 11, 2));
+            Osoba marica = new Osoba("Marica", new DateTime(1853, 11, 12));
+            osobe.Add(ivica);
+            osobe.Add(marica);
         }
 
         static void Main(string[] args)
